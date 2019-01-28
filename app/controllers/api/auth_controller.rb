@@ -14,7 +14,7 @@ module Api
       end
     end
 
-    def login(msg)
+    def login(msg="")
       user_profile = AuthenticateUserService.new(auth_params[:email],
                                                  auth_params[:password]).call
 
