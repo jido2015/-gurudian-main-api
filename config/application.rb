@@ -23,7 +23,7 @@ module GurudianMainApi
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
 
-    config.time_zone = 'West Africa Standard Time'
+    config.time_zone = 'Asia/Kuala_Lumpur'
 
 
     config.middleware.use ActionDispatch::Cookies
