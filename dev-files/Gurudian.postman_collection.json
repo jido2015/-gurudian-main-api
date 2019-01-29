@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "dfc9e7ed-62d5-402e-95d1-44b40dfe7be4",
+		"name": "Gurudian",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Sign Up",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"last_name\": \"Olajide Bashorun\",\n  \"first_name\": \"Bashorun\",\n  \"birthdate\": \"1/Oct/1991\",\n  \"email\": \"admin@gmail.com\",\n  \"password\": \"1234567890\",\n  \"password_confirmation\": \"1234567890\"\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/sign-up",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"sign-up"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"admin@gmail.com\",\n\t\"password\": \"1234567890\"\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/login",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer"
+	},
+	"variable": [
+		{
+			"id": "870c341b-f3e4-4894-9a37-01128dd9bf50",
+			"key": "jwt",
+			"value": "aaa",
+			"type": "string"
+		}
+	]
+}
