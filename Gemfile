@@ -16,6 +16,8 @@ gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
 
+gem 'rails_admin', '~> 1.3'
+# Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.12'
 gem 'jwt'
 # Use CoffeeScript for .coffee assets and views
@@ -26,8 +28,8 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+
+
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
