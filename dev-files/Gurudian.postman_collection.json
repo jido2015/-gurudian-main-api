@@ -19,7 +19,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"last_name\": \"Olajide Bashorun\",\n  \"first_name\": \"Bashorun\",\n  \"birthdate\": \"1/Oct/1991\",\n  \"email\": \"admin@gmail.com\",\n  \"password\": \"1234567890\",\n  \"password_confirmation\": \"1234567890\"\n}"
+					"raw": "{\n  \"last_name\": \"Olajide Bashorun\",\n  \"first_name\": \"Bashorun\",\n  \"birthdate\": \"1/Oct/1991\",\n  \"email\": \"bashorunolajide@gmail.com\",\n  \"password\": \"bashorun1991\",\n  \"password_confirmation\": \"bashorun1991\"\n}"
 				},
 				"url": {
 					"raw": "{{base_url}}/sign-up",
@@ -47,7 +47,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"email\": \"admin@gmail.com\",\n\t\"password\": \"1234567890\"\n}"
+					"raw": "{\n\t\"email\": \"bashorunolajide@gmail.com\",\n\t\"password\": \"bashorun1991\"\n}"
 				},
 				"url": {
 					"raw": "{{base_url}}/login",
