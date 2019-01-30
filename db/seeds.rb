@@ -5,3 +5,16 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+if Rails.env.development?
+  puts "Adding users..."
+  user = User.new
+  user.last_name = "Olajide"
+  user.first_name = "Bashorun"
+  user.birthdate = "1/10/1991"
+  user.email = "bashorunolajide@gmail.com"
+  user.password_digest = "bashorun1991"
+  user.save!
+  puts "Successfully added user: #{user.email}"
+  user.add_role :admin
+  puts "Successfully added 'admin' role to user: #{user.email}"
+end
