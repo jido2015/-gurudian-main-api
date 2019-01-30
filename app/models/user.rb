@@ -1,5 +1,6 @@
 class User < ApplicationRecord
 
+  rolify
   has_secure_password
 
   validates_presence_of :email, :password_digest
