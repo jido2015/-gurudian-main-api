@@ -1,5 +1,13 @@
 RailsAdmin.config do |config|
 
+  # For login to rails admin
+  config.authorize_with do
+    authenticate_or_request_with_http_basic('Login required') do |email, password|
+      user = User.find_by(:email=>email)
+
+      user && user.has_role?(:admin)
+    end
+  end
   ### Popular gems integration
 
   ## == Devise ==
