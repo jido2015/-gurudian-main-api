@@ -24,7 +24,13 @@ These instructions will get you a copy of the project up and running on your loc
 1. Ensure that your terminal is in the root of this project
 2. Run `. ./setup.sh` in your terminal
 3. Setup Postman (See section below)
-To access the admin panel at `/admin/`, you would need to set `admin` role to your user. See below for `Roles Setup`
+
+
+### Accessing admin panel
+1. To access the admin panel at `/admin/`, you would need to set `admin` role to your user. See below for `Roles Setup`
+2. By default, there is already an admin role (for non production environment only): check at `/db/seeds.rb`
+
+
 
 ### Postman Setup
 
