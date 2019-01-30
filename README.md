@@ -24,6 +24,7 @@ These instructions will get you a copy of the project up and running on your loc
 1. Ensure that your terminal is in the root of this project
 2. Run `. ./setup.sh` in your terminal
 3. Setup Postman (See section below)
+To access the admin panel at `/admin/`, you would need to set `admin` role to your user. See below for `Roles Setup`
 
 ### Postman Setup
 
@@ -32,6 +33,18 @@ These instructions will get you a copy of the project up and running on your loc
 3. At `./dev-files`, import `Gurudian.development.postman_environment.json` <= This will import the development environment for you
 4. At `./dev-files`, import `Gurudian.postman_collection.json`. This will import the entire current collection of Postman API call test
 
+
+#### Roles Setup
+
+1. Open your terminal
+2. Key in `rails c` to open rails console
+3. Find your user:
+    
+        a. By email: `user=User.find_by(:email =>"<email here>")`
+        b. By id: user=User.find(<user id>)
+       
+4. Then `user.add_role :admin`
+5. Done
 ## Running the tests
 
 <<<<<<< HEAD
@@ -67,7 +80,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Kiong**
+* **John**
 
 ## License
 
